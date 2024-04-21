@@ -34,11 +34,11 @@ for vs in variables:
         k = 'constant'
 
     if len(tvs) > 1:  #variable has coefficient
-        v = int(tvs)
+        v = float(tvs)
     else:
-        v = 1
+        v = 1.0
         if tvs[0] == '-':   #negative number
-            v = -1
+            v = -1.0
     #print(vs, tvs, k, v)
 
     if k in d.keys():
